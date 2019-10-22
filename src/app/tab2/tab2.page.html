@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Layanan
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <ion-radio-group>
+      <ion-list-header>
+        <ion-label>Macam</ion-label>
+      </ion-list-header>
+  
+      <ion-item>
+          <ion-icon name="phone-portrait"></ion-icon>
+        <ion-label >Panggil becak</ion-label>
+        <ion-radio slot="start" value="boy" checked></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+          <ion-icon name="globe"></ion-icon>
+        <ion-label>Becak pangkalan</ion-label>
+        <ion-radio slot="start" value="griff"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-icon name="cube"></ion-icon>
+        <ion-label>Antar barang</ion-label>
+        <ion-radio slot="start" value="buford"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-card>
+  <ion-card>
+    <ion-radio-group>
+      <ion-list-header>
+        <ion-label>hubungi mamank via</ion-label>
+        
+      </ion-list-header>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-button color='success' expand="block">
+              <ion-icon name="logo-whatsapp"></ion-icon> WhatsApp
+            </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button color='secondary' expand="block">
+              <ion-icon name="logo-twitter"></ion-icon> Twitter
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-radio-group>
+  </ion-card>
+</ion-content>
+<ion-button shape="round">Cari Becak</ion-button>
