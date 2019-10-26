@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Account
+      ACCOUNT
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,72 +10,45 @@
   <ion-list>
     <ion-radio-group>
       <ion-list-header>
-        <ion-label>E-mail</ion-label>
+        <ion-label size="large">Isi data diri anda</ion-label>
       </ion-list-header>
       <ion-item>
-        <ion-label position="stacked">totok tampan</ion-label>
+        <ion-label position="stacked">e-mail</ion-label>
         <ion-input></ion-input>
       </ion-item>
     </ion-radio-group>
   </ion-list>    
 
       <ion-list>
-        <ion-radio-group>
-          <ion-list-header>
+        <ion-list-header>
             <ion-label>Gender</ion-label>
-          </ion-list-header>
-      
-          <ion-item>
-            <ion-label>Laki-laki</ion-label>
-            <ion-radio slot="start" value="boy" checked></ion-radio>
-          </ion-item>
-      
-          <ion-item>
-            <ion-label>Perempuan</ion-label>
-            <ion-radio slot="start" value="griff"></ion-radio>
-          </ion-item>
-      
-          <ion-item>
-            <ion-label>Lainnya</ion-label>
-            <ion-radio slot="start" value="buford"></ion-radio>
-          </ion-item>
-        </ion-radio-group>
+        </ion-list-header>
+        <ion-select value="laki-laki" okText="Okay" cancelText="Dismiss">
+          <ion-select-option value="laki-laki">laki-laki</ion-select-option>
+          <ion-select-option value="perempuan">perempuan</ion-select-option>
+          <ion-select-option value="lainnya">lainnya</ion-select-option>  
+        </ion-select>
       </ion-list>
   <ion-item>
-    <ion-label>Default Label</ion-label>
+    <ion-label position="floating">Usia</ion-label>
     <ion-input></ion-input>
   </ion-item>
   
   <ion-item>
-    <ion-label position="floating">Floating Label</ion-label>
+    <ion-label position="floating">Nomor HP</ion-label>
     <ion-input></ion-input>
   </ion-item>
   
   <ion-item>
-    <ion-label position="fixed">Fixed Label</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-  
-  <ion-item>
-    <ion-label position="stacked">Stacked Label</ion-label>
+    <ion-label position="floating">Alamat</ion-label>
     <ion-input></ion-input>
   </ion-item>
 
-  <ion-item>
-      <ion-label>Hair Color</ion-label>
-      <ion-select value="brown" okText="Okay" cancelText="Dismiss">
-        <ion-select-option value="brown">Brown</ion-select-option>
-        <ion-select-option value="blonde">Blonde</ion-select-option>
-        <ion-select-option value="black">Black</ion-select-option>
-        <ion-select-option value="red">Red</ion-select-option>
-      </ion-select>
-    </ion-item> 
     <ion-grid>
       <ion-row>
+        <ion-col></ion-col>
         <ion-col>
           <ion-button (click)="ToastOptions()">confirm</ion-button>
-        </ion-col>
-        <ion-col>
         </ion-col>
         <ion-col></ion-col>
       </ion-row>
