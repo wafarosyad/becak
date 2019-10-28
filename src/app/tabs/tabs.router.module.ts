@@ -58,6 +58,16 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'tab3/detail',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../tab3-det/tab3-det.module').then(m => m.Tab3DetailPageModule)
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
